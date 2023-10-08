@@ -6,40 +6,43 @@
     <title>Document</title>
 </head>
 <body>
-  <div style="border: 2px solid black; width: 220px;">
-    <h1>Personal Information</h1>
+  <div>
+  <fieldset style="width: 620px;">
+    <legend>Personal information</legend>
     <from>
         <label for="Login">Login:<br></label>
         <input type="text" name="Login" id="login"><br>
         <label for="Haslo">Password:<br></label>
         <input type="password" name="Haslo" id="Haslo"><br>
         
-        <p><b>Radio button</b></p>
-        <label for="Plec1">Male</label>
-        <input type="radio" value="Male" id="Plec1" name="P"><br>
-        <label for="Plec2">Female</label>
-        <input type="radio" value="Female" id="Plec2" name="P"><br>
-        <label for="Plec1">Other</label>
-        <input type="radio" value="Other" id="Plec3" name="P"><br><br>
+        <br><label for="Plec1"><b>Radio buttons</b><br></label>
+        <input type="radio" value="Male" id="Plec1" name="P">
+        <label for="Plec1">Male</label><br>
+        <input type="radio" value="Female" id="Plec2" name="P">
+        <label for="Plec2">Female</label><br>
+        <input type="radio" value="Other" id="Plec3" name="P">
+        <label for="Plec1">Other</label><br><br>
         <label for="Wybierz"><b>Select car:</b><br></label>
-        <select name="Wybierz" id="Wybierz"><br>
+        <select name="Wybierz" id="Wybierz" size="3"><br>
             <option value="vol">Volvo</option>
             <option value="sat">Saab</option>
             <option value="fi">Fiat</option>
         </select>
         <br><br><label for="message"><b>Info:</b></label>
-        <br><textarea name="message" rows="5" cols="10" placeholder="Wpisz tekst"></textarea>
+        <br><textarea style="width: 400px;height: 160px;" name="message" rows="5" cols="10" placeholder="Wpisz tekst"></textarea>
         <br><br><br><label for="liczba"><b>Number</b></label>
-        <br><input type="number" name="liczba" id="liczba">
+        <br><input type="number" name="liczba" id="liczba" min="0">
+        <br><br><label for="rower"><b>Select option</b></label>
         <br><input type="checkbox" name="rower" id="rower">
         <label for="rower">I have a bike</label>
         <br><input type="checkbox" name="auto" id="auto">
         <label for="auto">I have a car</label>
         <br><br><label for="data-ur"><b>Birthday:</b></label>
         <br><input type="date" name="data-ur" id="data-ur">
-        <br><input type="submit" value="send">
-        <input type="reset" value="reset">
+        <br><br><input type="submit" value="Submit">
+        <input type="reset" value="Reset">
     </from>
+  </fieldset>
   </div>  
 </body>
 </html>
