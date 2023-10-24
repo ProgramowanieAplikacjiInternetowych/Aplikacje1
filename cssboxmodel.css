@@ -1,0 +1,24 @@
+
+div{background-color: bisque;
+    width: 300px;
+    border: 15px solid lightgreen;
+    padding: 50px;
+    margin: 20px;
+    
+}
+div:hover{
+    background-color: aquamarine;
+    border: 15px solid lightskyblue;
+}
+
+body:hover{
+    background-color: brown;
+}
+
+
+.ustawienie{
+    background-color: bisque;
+    width: 150px;
+    border: 15px solid lightgreen;
+    padding: 50px;
+    margin: 20px;}
