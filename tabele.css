@@ -1,0 +1,9 @@
+body{background-color: lightslategray;}
+td,tr,th{border-bottom: 2px solid black;
+border-collapse: collapse;}
+table{width: 100%;}
+tr:nth-child(even){background-color: blue;}
+tr:nth-child(odd){background-color: lightskyblue;}
+th{height: 30px;}
+td{text-align: center;}
+div{overflow-x: auto;overflow-y: auto;}
