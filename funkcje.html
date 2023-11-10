@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function message(){
+            alert("Jest to komunikat");
+        }
+        message();
+        function przycisk(){
+            alert("Nacisnołeś Przycisk");
+        }
+        function przycisk1(){
+            alert("Nacisnołeś Przycisk 1");
+        }
+        function przycisk2(){
+            alert("Nacisnołeś Przycisk 2");
+        }
+        function dodawanie(x,y){
+            return(x+y);
+        }
+        console.log("Suma 5+4=" + dodawanie(5,4));
+        [1,2,3,4].forEach( (el)=>{console.log(el)});
+        function dod(a,b,c){
+            return (a+b+c);
+        }
+        console.log("Suma 1+2+3=" + dod(1,2,3))
+        function superSUM(...r){console.log(r);}
+        superSUM(1,2,3,4,5,6,7,8,9,0);
+    function print(name="Adam", status="the best"){console.log(name +" "+status);}
+    print();
+    print("karol");
+    print("Paweł","Wysoki");
+    
+    </script>
+    
+    <title>Document</title>
+</head>
+<body>  
+    <form>
+        <button onclick=przycisk()>Przycisk</button>
+        <button onclick=przycisk1()>Przycisk1</button>
+        <button onclick=przycisk2()>Przycisk2</button>
+    </form>
+</body>
+</html>
