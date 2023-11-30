@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disabled</title>
+
+
+<style>
+    .d{background-color: aqua;}
+    .d:disabled{background-color: red;opacity: 1;}
+</style>
+
+</head>
+<body>
+   <h1>DISABLED</h1>
+    <form>
+    <input type="text" name="tekst1" id="tekst1">
+    <label for="tekst1">To jest zwykłe pole do wprowadzenia tekstu</label><br>
+    <input type="text" name="tekst2" id="tekst2" class="d" disabled>
+    <label for="tekst2">To jest zwykłe pole z pseudoklasą disalbed</label><br>
+    <input type="date"><br>
+    <input class="d" disabled type="date"><br>
+    <input type="checkbox" name="zaznacz" id="zaznacz">
+    <label for="zaznacz">Ten element jest włączony</label>   
+    <input type="checkbox" name="zaznacz2" id="zaznacz2" class="d" disabled>
+    <label for="zaznacz2">Ten element jest wyłączony przy użyciu disabled</label>   
+    <p>
+        Pseudoklasa :disabled pozwala nam na wyłączanie elementów i zmiane np koloru wyłączonych elementów 
+    </p>
+</form> 
+</body>
+</html>
