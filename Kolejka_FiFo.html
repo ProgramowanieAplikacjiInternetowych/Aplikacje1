@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolejka</title>
+
+
+    <script>
+        var kolejka=[];
+        var stos=[];
+        let z;
+        kolejka.push("jeden");
+        kolejka.push("dwa");
+        kolejka.push("trzy");
+        //while(z<4){
+        //    document.write()
+        //}
+        document.write(`Teraz kolejka zawiera ` + kolejka + `<br>`);
+        let usuniecie=kolejka.shift();
+        document.write(`Usunięty elemnt to ` + usuniecie + `<br>`);
+        document.write(`Teraz kolejka zawiera ` + kolejka + `<br>` + `<br>`);
+        stos.push("jeden");
+        stos.push("dwa");
+        stos.push("trzy");
+     
+        document.write(`Teraz Stos zawiera ` + stos + `<br>`);
+        let usuniecie1=stos.pop();
+        document.write(`Usunięty elemnt to ` + usuniecie1 + `<br>`);
+        document.write(`Teraz Stos zawiera ` + stos + `<br>` + `<br>`);
+
+        var tablica=[1,2,3,4];
+        document.write(`Tablica zawiera ` + tablica + `<br>`);
+        tablica.splice(3,1);
+        document.write(`Tablica zawiera ` + tablica + `<br>` + `<br>`);
+        
+        var tablica3 = [1,1,1,1];
+        document.write(`Tablica zawiera` + tablica3 + `<br>`);
+        tablica3.splice(2,0,3,4);
+        document.write(`Tablica zawiera` + tablica3 + `<br>`);
+        tablica3.splice(2,2,5,6);
+        document.write(`Tablica zawiera` + tablica3 + `<br>` + `<br>`);
+
+        var tablica4 = [1,1];
+        document.write(`Tablica zawiera` + tablica4 + `<br>`);
+        tablica4.splice(0,0,0);
+        tablica4.splice(3,1,9);
+        document.write(`Tablica zawiera` + tablica4 + `<br>` + `<br>`);
+
+        var owoce = ["Jabłko","Banan","Gruszka","Ananas"];
+        document.write(`Tablica zawiera` + owoce + `<br>`);
+        owoce.sort();
+        document.write(`Tablica zawiera` + owoce + `<br>`);
+        owoce.reverse();
+        document.write(`Tablica zawiera` + owoce + `<br>` + `<br>`);
+        
+
+    </script>
+
+<style>
+    document{ color: blueviolet;}
+</style>
+
+
+
+
+
+</head>
+
+
+<body>
+    
+</body>
+</html>

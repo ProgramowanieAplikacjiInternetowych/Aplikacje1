@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //const m=['Styczeń',"Luty","Marzec",'Kwiecień','Maj','czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień']
+        const m=['Niedziela','Poniedizałek','Wtorek','Środa','Czwartek','Piątek','Sobota']
+        let teraz = new Date();
+        let NazwaM = m[teraz.getDay()];
+        document.write("Teraz jest  " + NazwaM);
+        let g=teraz.getDate();
+        let mi=teraz.getMinutes();
+        let s=teraz.getSeconds();
+        document.write(g+":"+mi+":"+s);
+        setTimeout(1);
+        location.reload();
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
