@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">Pierwszy akapit</p>
+        <p id="p2">Drugi akapit</p>
+    </div>
+    <script>
+        let a = document.createElement("p");
+        let b = document.createElement("p");
+        let c = document.createElement("p");
+        let d = document.querySelector("#div1");
+        let e = document.querySelector("#p1");
+        let f = document.querySelector("#div1");
+        let g = document.querySelector("#p2");
+        let content=document.createTextNode("Nowy Akapit");
+        let content1=document.createTextNode("Nowy akapit 2");
+        let content2=document.createTextNode("Nowy akapit -1");
+        a.appendChild(content);
+        b.appendChild(content1);
+        c.appendChild(content2);
+        let pos=document.querySelector("#div1");
+        let before=document.querySelector("#p1");
+        pos.appendChild(a);
+        pos.appendChild(b);
+        pos.insertBefore(c,before);
+        d.removeChild(e);
+        f.removeChild(g);
+    
+    
+    </script>
+
+
+
+
+</body>
+</html>
