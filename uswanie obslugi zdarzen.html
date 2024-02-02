@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">To jest div</div>
+    <p id="demo"></p>
+    <input value="usun" type="button" onclick="removeEvent()">
+    <input value="dodaj" type="button" onclick="addevent()">
+    <input type="button">
+    <style>
+        #test{
+            background-color: coral;
+            border: solid 1px;
+            padding: 50px;
+            color: red;
+        }
+    
+
+
+    </style>
+    <script>
+        document.querySelector("#test").addEventListener("mousemove",myFunction);
+        function myFunction(){document.querySelector("#demo").innerHTML=Math.random();}
+        function removeEvent(){document.querySelector("#test").removeEventListener("mousemove",myFunction)}
+        function addevent(){document.querySelector("#test").addEventListener("mousemove",myFunction)}
+        let x = document.createElement("p");
+        let N=document.createTextNode("Nowy akapit");
+        x.appendChild(N);
+        
+        let a = document.createElement("p");
+        let b = document.createElement("p");
+        let c = document.createElement("p");
+        let d = document.querySelector("#div1");
+        let e = document.querySelector("#p1");
+        let f = document.querySelector("#div1");
+        let g = document.querySelector("#p2");
+        let content=document.createTextNode("Nowy Akapit");
+        let content1=document.createTextNode("Nowy akapit 2")
+        let content2=document.createTextNode("Nowy akapit -1")
+        a.appendChild(content);
+        b.appendChild(content1);
+        c.appendChild(content2);
+        let pos=document.querySelector("#div1");
+        //let before=document.querySelector("#p1")
+        pos.appendChild(a);
+        //pos.appendChild(b);
+        //pos.insertBefore(c,before);
+        //d.removeChild(e);
+        //f.removeChild(g);
+    
+    </script>
+
+
+
+</body>
+</html>

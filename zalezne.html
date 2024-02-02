@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h1>Wyszukiwanie stron internetowych</h1>
+    <script>
+        // let tekst="Maków Podhalański, 02.02.2024";
+        // let reg_date=/([123]?\d)[-\/\.]([01]?\d)[-\/\.](\d{4})/
+        // let position=tekst.search(reg_date);
+        let tekst="strona: www.zsgsucha.pl";
+        let wzorzec=/(\bwww\.)|(\bhttps?:\/\/)\S*/;
+        let pozycja=tekst.search(wzorzec);
+        document.write(tekst.slice(pozycja));
+        
+        
+        // document.write("Znaleziono na pozycji: "+ position + `<br>`);
+        // document.write(tekst.slice(position));
+    
+    </script>
+</body>
+</html>
